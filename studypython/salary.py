@@ -54,10 +54,10 @@ def main():
     emps = [Manager('Dieser'),Programmer('Refrain'),Manager('Kate Sun'),Salesman('Fisher'),Programmer('Lieber')]
     for emp in emps:
         if isinstance(emp,Programmer):
-            emp.working_hour = int(input('please input %s working hour this month:' % emp.name))
+            emp.working_hour = int(input('please input %s working hours this month:' % emp.name))
         elif isinstance(emp,Salesman):
             emp.sales = float(input('please input %s sales money this month: ' % emp.name))
-        print('%s salary this month is:￥%syuan' % (emp.name,emp.get_salary()))
+        print('%s salary this month is:￥%s' % (emp.name,emp.get_salary()))
 
 if __name__ == '__main__':
     main()
