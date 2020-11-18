@@ -1,4 +1,5 @@
 import time 
+
 def main():
     try:
         with open('studypython/text.txt', 'r', encoding='utf-8') as f:
