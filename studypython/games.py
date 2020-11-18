@@ -3,9 +3,9 @@ import pygame
 
 def main():
     # 初始化导入的pygame中的模块
-    pygame.init()
+    pygame.display.init()
     # 初始化用于显示的窗口并设置窗口尺寸
-    screen = pygame.display.set_mode((800, 600))
+    #screen = pygame.display.set_mode(size=(800, 600), flags=0, depth=0, display=0, vsync=0)
     # 设置当前窗口的标题
     pygame.display.set_caption('大球吃小球')
     running = True
