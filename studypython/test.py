@@ -1,6 +1,17 @@
-import module1 as m1
-import module2 as m2
+class Test:
+    def __init__(self,foo):
+        self.__foo = foo
 
-m1.foo()
-m2.foo()
-import module3
+    def __bar(self):
+        print(self.__foo)
+        print('__bar')
+
+
+def main():
+    test = Test('hello')
+    test._Test__bar()
+    print(test._Test__foo)
+
+
+if __name__ == '__main__':
+    main()
