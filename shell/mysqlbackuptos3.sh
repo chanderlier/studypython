@@ -32,7 +32,7 @@ tar -czPf $NOWDATE-backup.tar.gz *.sql
 # upload backup to s3
 # before you upload your backups to s3,you need aws config first 
 # aws config
-# input your aws S3 endpoint、access id 、accesskey
+# input your aws S3 endpoint、your aws access id and accesskey
 aws s3 cp  $SRCDIR/$NOWDATE-backup.tar.gz s3://$BUCKET/$DESTDIR/
 
 # delete old backups from s3
